@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>My website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .menu-container {
+            overflow: hidden;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+
+        .menu-item-active {
+            float: left;
+            margin-right: 10px;
+            padding: 8px 15px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .menu-item-active:last-child {
+            margin-right: 0;
+        }
+
+        .search-box {
+            float: right;
+            padding: 5px;
+        }
+
+        .search-box input {
+            padding: 5px;
+            width: 120px;
+        }
+
+        .search-box button {
+            padding: 5px 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .image-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .image-table td {
+            vertical-align: top;
+            padding: 0;
+            text-align: center;
+        }
+
+        .image-block {
+            height: 100px; 
+            width: 100%;
+            background-color: #f0f0f0; 
+            margin-bottom: 5px;
+        }
+
+        .image-block img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }   
+
+        .size-large  { height: 150px; }
+        .size-medium { height: 80px; }
+        .size-small  { height: 100px; }
+
+        
+
+        .card-row {
+            overflow: hidden;
+            margin-bottom: 20px;
+            max-width: 800px;
+        }
+
+        .card {
+            float: left;
+            width: 18%;
+            text-align: center;
+            margin-right: 2%;
+        }
+
+        .card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .card p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .card button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 3px 8px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        h3 {
+            margin: 10px 0;
+        }
+
+        .bottom-section {
+            display: table;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .left-column {
+            display: table-cell;
+            width: 60%;
+            vertical-align: top;
+            padding-right: 20px;
+        }
+
+        .right-column {
+            display: table-cell;
+            width: 40%;
+            vertical-align: top;
+            border-left: 1px solid #333;
+            padding-left: 20px;
+        }
+
+        .left-column h3 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .left-content {
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        .left-content span {
+            float: left;
+            width: calc(50% - 110px);
+            text-align: justify;
+        }
+
+        .left-content img {
+            float: left;
+            height: 200px;
+            margin: 0 10px;
+            object-fit: cover;
+            border: 1px solid #ddd;
+        }
+
+        .right-block {
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .right-block h3 {
+            margin-top: 0;
+        }
+
+        .right-block-text {
+            float: left;
+            width: calc(100% - 90px);
+            height: 80px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 5px;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .right-block-image {
+            float: right;
+            width: 80px;
+            height: 80px;
+            background-color: #bdc3c7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .right-block-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .right-block-link {
+            display: block;
+            text-align: center;
+            margin-top: 5px;
+            color: #007BFF;
+            text-decoration: underline;
+        }
+
+        footer {
+            clear: both;
+            margin-top: 30px;
+            padding-top: 10px;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<div class="menu-container">
+    <a href="#" class="menu-item-active">Меню 1</a>
+    <a href="#" class="menu-item-active">Меню 2</a>
+    <a href="#" class="menu-item-active">Меню 3</a>
+    <a href="#" class="menu-item-active">Меню 4</a>
+    <div class="search-box">
+        <input type="text" placeholder="Найти">
+        <button>Поиск</button>
+    </div>
+</div>
+
+<table class="image-table">
+    <tr>
+        <td>
+            <div class="image-block size-large">
+                <img src="/images/F1.png" alt="Описание 1">
+            </div>
+            <div class="image-block size-large">
+                <img src="/images/Shawshank.png" alt="Описание 2">
+            </div>
+        </td>
+        <td>
+            <div class="image-block size-medium">
+                <img src="/images/Gamp.png" alt="Описание 3">
+            </div>
+            <div class="image-block size-small">
+                <img src="/images/Horsman.png" alt="Описание 4">
+            </div>
+        </td>
+        <td>
+            <div class="image-block size-large">
+                <img src="/images/Oppenheimer.png" alt="Описание 5">
+            </div>
+            <div class="image-block size-large">
+                <img src="/images/DarkHnight.png" alt="Описание 6">
+            </div>
+        </td>
+    </tr>
+</table>
+
+<div class="card-row">
+    <div class="card">
+        <img src="images/12 man.png" alt="1">
+        <p><strong>Заголовок</strong></p>
+        <p>Текст</p>
+        <button>Подробнее»</button>
+    </div>
+    <div class="card">
+        <img src="images/DarkHnight.png" alt="2">
+        <p><strong>Заголовок</strong></p>
+        <p>Текст</p>
+        <button>Подробнее»</button>
+    </div>
+    <div class="card">
+        <img src="/images/F1.png" alt="3">
+        <p><strong>Заголовок</strong></p>
+        <p>Текст</p>
+        <button>Подробнее»</button>
+    </div>
+    <div class="card">
+        <img src="/images/FOX.png" alt="4">
+        <p><strong>Заголовок</strong></p>
+        <p>Текст</p>
+        <button>Подробнее»</button>
+    </div>
+    <div class="card">
+        <img src="images/Father.png" alt="5">
+        <p><strong>Заголовок</strong></p>
+        <p>Текст</p>
+        <button>Подробнее»</button>
+    </div>
+</div>
+
+<div class="bottom-section">
+    <div class="left-column">
+        <h3>Заголовок</h3>
+        <div class="left-content">
+            <span>asdasdasdadsasd asdasdasdadsasd asdasdasdadsasd asdasdasdadsasd asdasdasdadsasd asdasdasdadsasd asdasdasdadsasd asdasdasdadsasd asdasdasdadsasd asdasdasdadsasd</span>
+            <img src="/images/FOX.png" alt="FOX">
+            <span>asdasdasdadsasd asdasdasdadsasd asdasdasdadsasd asdasdasdadsasd asdasdasdadsasd asdasdasdadsasd asdasdasdadsasd asdasdasdadsasd asdasdasdadsasd asdasdasdadsasd</span>
+            <a href="#" class="right-block-link">Подробнее</a>
+        </div>
+    </div>
+
+    <div class="right-column">
+        <div class="right-block">
+            <h3>Заголовок</h3>
+            <div class="right-block-text">
+                asdasdasdadsasd asdasdasdadsasd asdasdasdadsasd asdasdasdadsasd
+            </div>
+            <div class="right-block-image">
+                <img src="/images/FOX.png" alt="Изображение">
+            </div>
+            <a href="#" class="right-block-link">Подробнее</a>
+        </div>
+
+        <div class="right-block">
+            <h3>Заголовок</h3>
+            <div class="right-block-text">
+                asdasdasdadsasd asdasdasdadsasd asdasdasdadsasd asdasdasdadsasd
+            </div>
+            <div class="right-block-image">
+                <img src="/images/F1.png" alt="Изображение">
+            </div>
+            <a href="#" class="right-block-link">Подробнее</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2025 Волошиснкий Ротсилав. Все права защищены.</p>
+</footer>
+
+</body>
+</html>
