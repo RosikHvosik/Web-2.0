@@ -1,0 +1,45 @@
+.right-bottom-colum{
+    border-left: thin solid black;
+    display: inline-block;
+    overflow: hidden;
+    width: 34%;
+}
+
+.left-colum-of-block{
+    display: inline-block;
+    width: 38%;
+    padding-left: 20px;
+    height: 100%;
+    padding-right: 10px;
+    vertical-align: top;
+
+}
+
+.right-colum-of-block{
+    display: inline-block;
+    width: 50%;
+}
+
+.right-colum-of-block img{
+    display: block;
+    width: 100%;
+    height: 254px;
+}
+
+.blockeee{
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    vertical-align: top;
+    margin-bottom: 100px;
+}
+
+.blockeee h3{
+    text-align: right;
+}
+
+.blockeee a{
+    text-align: right;
+    text-decoration: underline;
+}
+

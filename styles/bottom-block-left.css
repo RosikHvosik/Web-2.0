@@ -1,0 +1,62 @@
+.left-letxt{
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+}
+
+.right-text{
+    width: 22%;
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+}
+
+.right-text p{
+    overflow: hidden;
+    display: block;
+    text-align: left;
+
+}
+
+.left-letxt p{
+    overflow: hidden;
+    display: block;
+    text-align: left;
+}
+
+.img-bottom{
+    width: 56%;
+    display: inline-block;
+    justify-content: center;
+}
+
+.bottom-block-left{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.both-blocks{
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    width: 65%;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.img-bottom img{
+    width: 100%;
+    height: 400px;
+}
+
+.bottom-block-left h2{
+    text-align: center;
+}
+
+.right-text a{
+    text-decoration: underline;
+}

@@ -1,0 +1,56 @@
+.circl-menu{
+    display: inline-block;
+    margin: 1vh;
+    overflow: hidden;
+    vertical-align: top;
+    width: 100%;
+    text-align: center;
+}
+
+.button_blue{
+    background-color: #007BFF;
+    color:white;
+    text-align: center;
+    border: thin solid black;
+    display: inline-block;
+    border-radius: 20%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.object-of-menu{
+    display: inline-block;
+    font-size: 0px;
+    height: 180px;
+}
+
+.object-of-menu:last-child{
+    margin-right: 0vh;
+}
+.bottom-menu{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.object-of-menu img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+.titile{
+    font-weight: bold;
+    text-align: center;
+}
+
+.description{
+    text-align: center;
+}
+
+.left-colum-bottom{
+    display: inline-block;
+    width: 50%;
+}
+
+.circl-img{
+    height: 180px;
+}
