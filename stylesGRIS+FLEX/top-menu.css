@@ -1,0 +1,32 @@
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+.active-botton{
+    display: inline-flex;
+    color: white;
+    background-color: cornflowerblue;
+    padding: 10px;
+}
+
+.unactive-botton{
+    display: inline-flex;
+    color:black;
+    background: white;
+    padding: 10px;
+}
+
+.bottom-menu-block{
+    display: block;
+    color:white;
+    background-color: cornflowerblue;
+}
+
+.search-botton{
+    color: white;
+    background-color:darkblue;
+    text-align: center;
+    border-radius: 15%;
+    padding: 3px;
+    margin-left: auto;
+}
