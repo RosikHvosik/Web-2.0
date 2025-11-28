@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
+<style>
+    .image-container-wide {
+        height: 300px;
+        overflow: hidden;
+    }
+
+    .img-wide {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+</style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="/images/image5.JPG" alt="" width="30" height="24" class="d-inline-block align-text-top me-2">
+                Самые крутые фильмы
+            </a>
+
+            <button class="navbar-toggler border-light btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Переключить навигацию">
+                <span class="navbar-toggler-icon">|||</span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Меню 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Меню 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Меню 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Меню 4</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Поиск по сайту" aria-label="Поиск">
+                    <button class="btn btn-light" type="submit">Поиск</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-3">
+        <div class="row g-3">
+            <div class="col-lg-8 col-md-6 col-12">
+                <div class="image-container-wide m-1">
+                    <div class="bg-image hover-zoom">
+                        <img src="/images/DarkHnight.png" class="img-wide" alt="Dark Knight">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="image-container-wide m-1">
+                    <div class="bg-image hover-overlay shadow-1-strong rounded">
+                        <img src="/images/Horsman.png" class="img-wide" alt="Horsman">
+                        <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-3 mt-3">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="image-container-wide m-1">
+                    <div class="bg-image hover-zoom">
+                        <img src="/images/FOX.png" class="img-wide" alt="FOX">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-6 col-12">
+                <div class="image-container-wide m-1">
+                    <div class="bg-image hover-overlay shadow-1-strong rounded">
+                        <img src="/images/F1.png" class="img-wide" alt="F1">
+                        <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-4">
+        <div class="row g-3">
+
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="bg-light p-3 border border-dark rounded-3 h-100 d-flex flex-column" style="max-width: 650px;">
+                    <div class="d-flex justify-content-center align-items-center" style="max-height: 150px; overflow: hidden;">
+                        <img src="/images/F1.png" class="rounded-pill" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h5 class="card-title text-center">F1</h5>
+                    <div class="flex-grow-1 mt-2">
+                        <p class="card-text text-break ps-2">«Формула-1» (2025) — гоночная драма режиссёра Джозефа Косински, действие которой разворачивается в мире профессиональных автогонок. Фильм рассказывает историю талантливого, но амбициозного гонщика, стремящегося закрепиться в элитном спорте, где скорость, риск и напряжение становятся частью повседневной жизни.</p>
+                    </div>
+                    <a href="#" class="btn btn-primary me-auto mt-2">Подробнее</a>
+                </div>
+            </div>
+<!-- 2 стоблик-->
+            <div class="col-lg-3 col-md-6 col-12 d-flex flex-column gap-3">
+                
+                <div class="bg-light p-3 border border-dark rounded-3 h-100 d-flex flex-column" style="max-width: 650px;">
+                    <h5 class="card-title text-center">Конь Бо Джек</h5>
+                    <div class="flex-grow-1 mt-2">
+                        <p class="card-text text-break ps-2">«Бо Джек» — анимационный драмеди о депрессивном лошадином актёре, борющемся с одиночеством и зависимостями в Голливуде.</p>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center" style="max-height: 100px; overflow: hidden;">
+                        <img src="/images/Horsman.png" class="rounded-pill" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <a href="#" class="btn btn-primary ms-auto mt-2">Подробнее</a>
+                </div>
+
+
+                <div class="bg-light p-3 border border-dark rounded-3 h-100 d-flex flex-column" style="max-width: 650px;">
+                    <div class="d-flex justify-content-center align-items-center" style="max-height: 100px; overflow: hidden;">
+                        <img src="/images/DarkHnight.png" class="rounded-pill" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h5 class="card-title text-center">Темный рыцарь</h5>
+                    <div class="flex-grow-1 mt-2">
+                        <p class="card-text text-break ps-2">«Тёмный рыцарь» — супергеройский боевик Кристофера Нолана, где Бэтмен противостоит Джокеру, ставя под сомнение идею справедливости.</p>
+                    </div>
+                    <a href="#" class="btn btn-primary me-auto mt-2">Подробнее</a>
+                </div>
+            </div>
+
+<div class="col-lg-6 col-md-12 col-12">
+    <div class="d-md-flex flex-row flex-wrap" style="gap: 0.5rem;">
+
+        <!--3.1-->
+        <div class="bg-light p-3 border border-dark rounded-3 w-100 mb-2">
+            <div class="row">
+                <div class="col order-1">
+                    <h6 class="text-center">Бесподобный мистер фокс</h6>
+                </div>
+                <div class="col-md d-flex flex-column order-2">
+                    <p class="card-text text-break ps-2">Анимационный фильм Уэса Андерсона о хитром лисе и его приключениях.</p>
+                    <a href="#" class="btn btn-primary ms-auto mt-auto">Подробнее</a>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-center order-3" style="max-height: 80px; overflow: hidden;">
+                    <img src="/images/FOX.png" class="rounded-pill" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+
+        <!-- 3.2 -->
+        <div class="bg-light p-3 border border-dark rounded-3 w-100 mb-2" style="max-width: none;">
+            <div class="row">
+                <div class="col order-1">
+                    <h6 class="text-center">F1</h6>
+                </div>
+                <div class="col-md d-flex flex-column order-2">
+                    <p class="card-text text-break ps-2">Анимационный фильм Уэса Андерсона о хитром лисе и его приключениях.</p>
+                    <a href="#" class="btn btn-primary ms-auto mt-auto">Подробнее</a>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-center order-3" style="max-height: 80px; overflow: hidden;">
+                    <img src="/images//F1.png" class="rounded-pill" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+        <!-- 3.3-->
+        <div class="bg-light p-3 border border-dark rounded-3 w-100 mb-2" style="max-width: none;">
+            <div class="row">
+                <div class="col order-2 order-md-2">
+                    <h6 class="text-center">Форест Гамп</h6>
+                </div>
+                <div class="col-md d-flex flex-column order-3 order-md-3">
+                    <p class="card-text text-break ps-2">Анимационный фильм Уэса Андерсона о хитром лисе и его приключениях.</p>
+                    <a href="#" class="btn btn-primary ms-auto mt-auto">Подробнее</a>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-center order-1 order-md-1" style="max-height: 80px; overflow: hidden;">
+                    <img src="/images/Gamp.png" class="rounded-pill" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+
+        <!-- 3.4-->
+        <div class="bg-light p-3 border border-dark rounded-3 w-100" style="max-width: none;">
+            <div class="row">
+                <div class="col order-2 order-md-2">
+                    <h6 class="text-center">Крестный отец</h6>
+                </div>
+                <div class="col-md d-flex flex-column order-3 order-md-3">
+                    <p class="card-text text-break ps-2">Анимационный фильм Уэса Андерсона о хитром лисе и его приключениях.</p>
+                    <a href="#" class="btn btn-primary ms-auto mt-auto">Подробнее</a>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-center order-1 order-md-1" style="max-height: 80px; overflow: hidden;">
+                    <img src="/images/Father.png" class="rounded-pill" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+        </div>
+    </div>
+</body>
+</html>
